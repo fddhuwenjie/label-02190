@@ -18,7 +18,8 @@ import {
   Trophy, 
   Menu as MenuIcon,
   Close,
-  DocumentCopy
+  DocumentCopy,
+  DataAnalysis
 } from '@element-plus/icons-vue'
 import type { Component } from 'vue'
 
@@ -56,6 +57,7 @@ const isMobileMenuOpen = ref(false)
 const navItems: NavItem[] = [
   { path: '/', name: 'home', title: '首页', icon: HomeFilled },
   { path: '/heroes', name: 'heroes', title: '英雄', icon: User },
+  { path: '/compare', name: 'hero-compare', title: '对比', icon: DataAnalysis },
   { path: '/equipment', name: 'equipment', title: '装备', icon: Box },
   { path: '/events', name: 'events', title: '赛事', icon: Trophy },
   { path: '/version-hub', name: 'version-hub', title: '版本中心', icon: DocumentCopy },

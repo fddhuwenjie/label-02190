@@ -19,6 +19,48 @@ export interface Skin {
   price?: number
 }
 
+/**
+ * 英雄六维属性接口
+ * 包含英雄的核心战斗属性数据
+ */
+export interface HeroStats {
+  /** 最大生命值 */
+  maxHp: number
+  /** 物理攻击 */
+  attack: number
+  /** 物理防御 */
+  defense: number
+  /** 法术攻击 */
+  magic: number
+  /** 移动速度 */
+  moveSpeed: number
+  /** 攻击速度 */
+  attackSpeed: number
+}
+
+/**
+ * 英雄六维属性键名联合类型
+ * 用于遍历和索引 HeroStats 的所有属性键
+ */
+export type HeroStatsKey = keyof HeroStats
+
+/**
+ * 英雄属性对比差值项接口
+ * 表示两个英雄在某项属性上的对比结果
+ */
+export interface CompareDiffItem {
+  /** 属性键名 */
+  key: HeroStatsKey
+  /** 属性中文名称 */
+  label: string
+  /** 英雄1的属性值 */
+  hero1Value: number
+  /** 英雄2的属性值 */
+  hero2Value: number
+  /** 差值（英雄1 - 英雄2） */
+  diff: number
+}
+
 export interface Hero {
   id: number
   name: string
@@ -29,6 +71,8 @@ export interface Hero {
   skills: Skill[]
   skins: Skin[]
   story: string
+  /** 英雄六维属性 */
+  stats: HeroStats
 }
 
 // Equipment Types

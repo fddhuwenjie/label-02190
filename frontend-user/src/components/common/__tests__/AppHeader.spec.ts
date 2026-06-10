@@ -18,9 +18,10 @@ import AppHeader from '../AppHeader.vue'
 const NAV_ITEMS = [
   { path: '/', name: 'home', title: '首页' },
   { path: '/heroes', name: 'heroes', title: '英雄' },
+  { path: '/compare', name: 'hero-compare', title: '对比' },
   { path: '/equipment', name: 'equipment', title: '装备' },
   { path: '/events', name: 'events', title: '赛事' },
-  { path: '/profile', name: 'profile', title: '个人中心' }
+  { path: '/version-hub', name: 'version-hub', title: '版本中心' }
 ]
 
 // All valid route paths to test
@@ -29,9 +30,11 @@ const VALID_ROUTES = [
   '/heroes',              // 英雄列表
   '/heroes/1',            // 英雄详情 (example ID)
   '/heroes/123',          // 英雄详情 (another ID)
+  '/compare',             // 英雄对比
   '/equipment',           // 装备
   '/events',              // 赛事
-  '/profile'              // 个人中心
+  '/version-hub',         // 版本中心
+  '/version-hub/v1.0'     // 版本详情 (example)
 ]
 
 /**
@@ -43,10 +46,12 @@ function createTestRouter(_initialRoute: string): Router {
     routes: [
       { path: '/', name: 'home', component: { template: '<div>Home</div>' } },
       { path: '/heroes', name: 'heroes', component: { template: '<div>Heroes</div>' } },
+      { path: '/compare', name: 'hero-compare', component: { template: '<div>Compare</div>' } },
       { path: '/heroes/:id', name: 'hero-detail', component: { template: '<div>Hero Detail</div>' } },
       { path: '/equipment', name: 'equipment', component: { template: '<div>Equipment</div>' } },
       { path: '/events', name: 'events', component: { template: '<div>Events</div>' } },
-      { path: '/profile', name: 'profile', component: { template: '<div>Profile</div>' } }
+      { path: '/version-hub', name: 'version-hub', component: { template: '<div>Version Hub</div>' } },
+      { path: '/version-hub/:id', name: 'version-detail', component: { template: '<div>Version Detail</div>' } }
     ]
   })
 }
