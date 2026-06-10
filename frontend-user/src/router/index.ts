@@ -61,6 +61,15 @@ const routes: RouteRecordRaw[] = [
     }
   },
   {
+    path: '/compare',
+    name: 'hero-compare',
+    component: () => import('@/views/HeroCompareView.vue'),
+    meta: {
+      title: '英雄对比',
+      transition: 'fade'
+    }
+  },
+  {
     path: '/version-hub',
     name: 'version-hub',
     component: () => import('@/views/VersionHubView.vue'),

@@ -22,7 +22,8 @@ export const heroes: Hero[] = [
       { id: 1002, name: '死亡骑士', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/166/166-bigskin-2.jpg', price: 288 },
       { id: 1003, name: '狮心王', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/166/166-bigskin-3.jpg', price: 888 }
     ],
-    story: '亚瑟是古代王国的守护骑士，他以圣剑和盾牌守护着王国的和平。'
+    story: '亚瑟是古代王国的守护骑士，他以圣剑和盾牌守护着王国的和平。',
+    stats: { maxHp: 6250, attack: 168, defense: 298, magic: 0, moveSpeed: 380, attackSpeed: 142 }
   },
   {
     id: 2,
@@ -42,7 +43,8 @@ export const heroes: Hero[] = [
       { id: 2002, name: '热情桑巴', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/109/109-bigskin-2.jpg', price: 288 },
       { id: 2003, name: '仙境爱丽丝', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/109/109-bigskin-3.jpg', price: 888 }
     ],
-    story: '妲己是一只修炼千年的九尾狐，她拥有迷惑人心的魅力。'
+    story: '妲己是一只修炼千年的九尾狐，她拥有迷惑人心的魅力。',
+    stats: { maxHp: 4580, attack: 98, defense: 168, magic: 312, moveSpeed: 360, attackSpeed: 136 }
   },
 
   {
@@ -64,7 +66,8 @@ export const heroes: Hero[] = [
       { id: 3003, name: '千年之狐', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/131/131-bigskin-3.jpg', price: 1688 },
       { id: 3004, name: '凤求凰', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/131/131-bigskin-4.jpg', price: 1688 }
     ],
-    story: '李白是一位传奇的剑客诗人，他的剑术与诗才同样出众。'
+    story: '李白是一位传奇的剑客诗人，他的剑术与诗才同样出众。',
+    stats: { maxHp: 4920, attack: 268, defense: 178, magic: 0, moveSpeed: 390, attackSpeed: 158 }
   },
   {
     id: 4,
@@ -84,7 +87,8 @@ export const heroes: Hero[] = [
       { id: 4002, name: '精灵王', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/169/169-bigskin-2.jpg', price: 288 },
       { id: 4003, name: '黄金射手座', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/169/169-bigskin-3.jpg', price: 888 }
     ],
-    story: '后羿是上古时代的神射手，他曾射下九个太阳。'
+    story: '后羿是上古时代的神射手，他曾射下九个太阳。',
+    stats: { maxHp: 4380, attack: 252, defense: 148, magic: 0, moveSpeed: 360, attackSpeed: 168 }
   },
   {
     id: 5,
@@ -104,7 +108,8 @@ export const heroes: Hero[] = [
       { id: 5002, name: '繁星吟游', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/184/184-bigskin-2.jpg', price: 588 },
       { id: 5003, name: '花朝月夕', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/184/184-bigskin-3.jpg', price: 888 }
     ],
-    story: '蔡文姬是东汉末年的才女，精通音律和文学。'
+    story: '蔡文姬是东汉末年的才女，精通音律和文学。',
+    stats: { maxHp: 5120, attack: 82, defense: 198, magic: 278, moveSpeed: 360, attackSpeed: 128 }
   },
   {
     id: 6,
@@ -124,7 +129,8 @@ export const heroes: Hero[] = [
       { id: 6002, name: '霸王别姬', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/135/135-bigskin-2.jpg', price: 288 },
       { id: 6003, name: '西楚霸王', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/135/135-bigskin-3.jpg', price: 888 }
     ],
-    story: '项羽是秦末的霸王，力能扛鼎，勇冠三军。'
+    story: '项羽是秦末的霸王，力能扛鼎，勇冠三军。',
+    stats: { maxHp: 6850, attack: 158, defense: 328, magic: 0, moveSpeed: 375, attackSpeed: 138 }
   },
 
   {
@@ -146,7 +152,8 @@ export const heroes: Hero[] = [
       { id: 7003, name: '异域舞娘', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/141/141-bigskin-3.jpg', price: 888 },
       { id: 7004, name: '猫影幻舞', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/141/141-bigskin-4.jpg', price: 1688 }
     ],
-    story: '貂蝉是东汉末年的绝世美人，她的舞姿倾国倾城。'
+    story: '貂蝉是东汉末年的绝世美人，她的舞姿倾国倾城。',
+    stats: { maxHp: 4680, attack: 112, defense: 188, magic: 298, moveSpeed: 370, attackSpeed: 148 }
   },
   {
     id: 8,
@@ -167,7 +174,8 @@ export const heroes: Hero[] = [
       { id: 8003, name: '白龙吟', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/150/150-bigskin-3.jpg', price: 1688 },
       { id: 8004, name: '飞衡', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/150/150-bigskin-4.jpg', price: 1688 }
     ],
-    story: '韩信是西汉开国功臣，被誉为"兵仙"。'
+    story: '韩信是西汉开国功臣，被誉为"兵仙"。',
+    stats: { maxHp: 4820, attack: 278, defense: 168, magic: 0, moveSpeed: 400, attackSpeed: 162 }
   },
   {
     id: 9,
@@ -188,7 +196,8 @@ export const heroes: Hero[] = [
       { id: 9003, name: '电玩小子', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/112/112-bigskin-3.jpg', price: 888 },
       { id: 9004, name: '星空梦想', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/112/112-bigskin-4.jpg', price: 1688 }
     ],
-    story: '鲁班七号是鲁班大师创造的机关人偶。'
+    story: '鲁班七号是鲁班大师创造的机关人偶。',
+    stats: { maxHp: 4120, attack: 262, defense: 138, magic: 0, moveSpeed: 350, attackSpeed: 172 }
   },
   {
     id: 10,
@@ -209,7 +218,8 @@ export const heroes: Hero[] = [
       { id: 10003, name: '蔷薇恋人', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/111/111-bigskin-3.jpg', price: 888 },
       { id: 10004, name: '末日机甲', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/111/111-bigskin-4.jpg', price: 1688 }
     ],
-    story: '孙尚香是东吴的郡主，性格豪爽，武艺高强。'
+    story: '孙尚香是东吴的郡主，性格豪爽，武艺高强。',
+    stats: { maxHp: 4480, attack: 258, defense: 152, magic: 0, moveSpeed: 365, attackSpeed: 165 }
   },
 
   {
@@ -230,7 +240,8 @@ export const heroes: Hero[] = [
       { id: 11002, name: '黄金分割率', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/190/190-bigskin-2.jpg', price: 288 },
       { id: 11003, name: '武陵仙君', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/190/190-bigskin-3.jpg', price: 1688 }
     ],
-    story: '诸葛亮是三国时期蜀汉的丞相，被誉为"卧龙"。'
+    story: '诸葛亮是三国时期蜀汉的丞相，被誉为"卧龙"。',
+    stats: { maxHp: 4520, attack: 108, defense: 172, magic: 328, moveSpeed: 370, attackSpeed: 142 }
   },
   {
     id: 12,
@@ -251,7 +262,8 @@ export const heroes: Hero[] = [
       { id: 12003, name: '天魔缭乱', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/123/123-bigskin-3.jpg', price: 1688 },
       { id: 12004, name: '圣诞狂欢', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/123/123-bigskin-4.jpg', price: 888 }
     ],
-    story: '吕布是东汉末年的猛将，被誉为"人中吕布，马中赤兔"。'
+    story: '吕布是东汉末年的猛将，被誉为"人中吕布，马中赤兔"。',
+    stats: { maxHp: 5680, attack: 248, defense: 268, magic: 0, moveSpeed: 380, attackSpeed: 152 }
   },
   {
     id: 13,
@@ -271,7 +283,8 @@ export const heroes: Hero[] = [
       { id: 13002, name: '云端筑梦师', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-bigskin-2.jpg', price: 888 },
       { id: 13003, name: '玄嵩', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113-bigskin-3.jpg', price: 1688 }
     ],
-    story: '庄周是战国时期的哲学家，道家学派的代表人物。'
+    story: '庄周是战国时期的哲学家，道家学派的代表人物。',
+    stats: { maxHp: 5820, attack: 88, defense: 258, magic: 248, moveSpeed: 370, attackSpeed: 132 }
   },
   {
     id: 14,
@@ -291,7 +304,8 @@ export const heroes: Hero[] = [
       { id: 14002, name: '爱与正义', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/144/144-bigskin-2.jpg', price: 288 },
       { id: 14003, name: '功夫厨神', image: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/144/144-bigskin-3.jpg', price: 888 }
     ],
-    story: '程咬金是隋唐时期的猛将，性格豪爽，武艺高强。'
+    story: '程咬金是隋唐时期的猛将，性格豪爽，武艺高强。',
+    stats: { maxHp: 6480, attack: 148, defense: 308, magic: 0, moveSpeed: 375, attackSpeed: 135 }
   }
 ]
 
