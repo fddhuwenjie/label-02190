@@ -18,7 +18,8 @@ import {
   Trophy, 
   Menu as MenuIcon,
   Close,
-  DocumentCopy
+  DocumentCopy,
+  DataAnalysis
 } from '@element-plus/icons-vue'
 import type { Component } from 'vue'
 
@@ -59,6 +60,7 @@ const navItems: NavItem[] = [
   { path: '/equipment', name: 'equipment', title: '装备', icon: Box },
   { path: '/events', name: 'events', title: '赛事', icon: Trophy },
   { path: '/version-hub', name: 'version-hub', title: '版本中心', icon: DocumentCopy },
+  { path: '/compare', name: 'compare', title: '英雄对比', icon: DataAnalysis },
  
 ]
 
