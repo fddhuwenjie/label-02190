@@ -19,6 +19,26 @@ export interface Skin {
   price?: number
 }
 
+/**
+ * 英雄六维属性接口
+ * @interface HeroStats
+ * @description 定义英雄的基础战斗属性，用于英雄对比功能
+ */
+export interface HeroStats {
+  /** 最大生命值 */
+  maxHp: number
+  /** 物理攻击力 */
+  attack: number
+  /** 物理防御力 */
+  defense: number
+  /** 法术强度 */
+  magic: number
+  /** 移动速度 */
+  moveSpeed: number
+  /** 攻击速度（百分比） */
+  attackSpeed: number
+}
+
 export interface Hero {
   id: number
   name: string
@@ -29,6 +49,8 @@ export interface Hero {
   skills: Skill[]
   skins: Skin[]
   story: string
+  /** 英雄六维属性 */
+  stats: HeroStats
 }
 
 // Equipment Types
