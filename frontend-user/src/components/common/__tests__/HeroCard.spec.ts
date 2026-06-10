@@ -24,6 +24,14 @@ const createMockHero = (overrides: Partial<Hero> = {}): Hero => ({
   avatar: '/images/heroes/arthur.jpg',
   role: 'warrior',
   difficulty: 2,
+  stats: {
+    maxHp: 7800,
+    attack: 280,
+    defense: 220,
+    magic: 50,
+    moveSpeed: 380,
+    attackSpeed: 28
+  },
   skills: [],
   skins: [],
   story: '亚瑟是一位勇敢的战士',
@@ -467,6 +475,14 @@ const heroArbitrary: fc.Arbitrary<Hero> = fc.record({
   avatar: fc.constant('/images/heroes/default.jpg'),
   role: heroRoleArbitrary,
   difficulty: difficultyArbitrary,
+  stats: fc.record({
+    maxHp: fc.integer({ min: 5000, max: 9000 }),
+    attack: fc.integer({ min: 100, max: 400 }),
+    defense: fc.integer({ min: 80, max: 250 }),
+    magic: fc.integer({ min: 50, max: 450 }),
+    moveSpeed: fc.integer({ min: 350, max: 410 }),
+    attackSpeed: fc.integer({ min: 10, max: 35 })
+  }),
   skills: fc.constant([]),
   skins: fc.constant([]),
   story: fc.constant('英雄故事')
