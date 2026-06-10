@@ -80,6 +80,15 @@ const routes: RouteRecordRaw[] = [
     }
   },
   {
+    path: '/compare',
+    name: 'hero-compare',
+    component: () => import('@/views/HeroCompareView.vue'),
+    meta: {
+      title: '英雄对比',
+      transition: 'fade'
+    }
+  },
+  {
     // Catch-all route - redirect to home
     path: '/:pathMatch(.*)*',
     redirect: '/'

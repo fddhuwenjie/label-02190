@@ -11,6 +11,14 @@ export const heroes: Hero[] = [
     avatar: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/166/166.jpg',
     role: 'warrior',
     difficulty: 1,
+    stats: {
+      maxHp: 7320,
+      attack: 375,
+      defense: 158,
+      magic: 0,
+      moveSpeed: 400,
+      attackSpeed: 100
+    },
     skills: [
       { id: 101, name: '圣光守护', icon: '/images/jn/13100.webp', description: '亚瑟每损失3%最大生命值，将增加1%伤害减免，最多增加30%伤害减免。', cooldown: 0 },
       { id: 102, name: '誓约之盾', icon: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/166/16610.png', description: '亚瑟向前冲锋，对路径上的敌人造成物理伤害并沉默1秒。', cooldown: 8 },
@@ -31,6 +39,14 @@ export const heroes: Hero[] = [
     avatar: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/109/109.jpg',
     role: 'mage',
     difficulty: 1,
+    stats: {
+      maxHp: 5860,
+      attack: 286,
+      defense: 88,
+      magic: 485,
+      moveSpeed: 360,
+      attackSpeed: 100
+    },
     skills: [
       { id: 201, name: '失心', icon: '/images/jn/17900.webp', description: '妲己的技能命中敌人后，会降低目标的魔法防御。', cooldown: 0 },
       { id: 202, name: '灵魂冲击', icon: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/109/10910.png', description: '妲己释放狐火，对前方敌人造成法术伤害。', cooldown: 6 },
@@ -52,6 +68,14 @@ export const heroes: Hero[] = [
     avatar: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/131/131.jpg',
     role: 'assassin',
     difficulty: 3,
+    stats: {
+      maxHp: 6230,
+      attack: 392,
+      defense: 102,
+      magic: 0,
+      moveSpeed: 420,
+      attackSpeed: 112
+    },
     skills: [
       { id: 301, name: '侠客行', icon: '/images/jn/13100.webp', description: '李白普攻命中敌人4次后，下一次普攻将触发剑气。', cooldown: 0 },
       { id: 302, name: '将进酒', icon: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/131/13110.png', description: '李白向指定方向突进，对路径上的敌人造成物理伤害。', cooldown: 12 },
@@ -73,6 +97,14 @@ export const heroes: Hero[] = [
     avatar: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/169/169.jpg',
     role: 'marksman',
     difficulty: 1,
+    stats: {
+      maxHp: 5980,
+      attack: 402,
+      defense: 92,
+      magic: 0,
+      moveSpeed: 360,
+      attackSpeed: 120
+    },
     skills: [
       { id: 401, name: '迟缓之箭', icon: '/images/jn/18700.webp', description: '后羿的普攻会减速目标，持续2秒。', cooldown: 0 },
       { id: 402, name: '多重箭矢', icon: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/169/16910.png', description: '后羿的普攻变为散射，同时攻击多个目标。', cooldown: 10 },
@@ -93,6 +125,14 @@ export const heroes: Hero[] = [
     avatar: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/184/184.jpg',
     role: 'support',
     difficulty: 2,
+    stats: {
+      maxHp: 6020,
+      attack: 258,
+      defense: 108,
+      magic: 420,
+      moveSpeed: 370,
+      attackSpeed: 100
+    },
     skills: [
       { id: 501, name: '长歌行', icon: '/images/jn/18400.webp', description: '蔡文姬的技能命中敌人后，会为附近的友军回复生命值。', cooldown: 0 },
       { id: 502, name: '胡笳乐', icon: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/184/18410.png', description: '蔡文姬弹奏胡笳，对周围敌人造成法术伤害并减速。', cooldown: 7 },
@@ -113,6 +153,14 @@ export const heroes: Hero[] = [
     avatar: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/135/135.jpg',
     role: 'tank',
     difficulty: 2,
+    stats: {
+      maxHp: 8850,
+      attack: 358,
+      defense: 201,
+      magic: 0,
+      moveSpeed: 390,
+      attackSpeed: 98
+    },
     skills: [
       { id: 601, name: '霸体', icon: '/images/jn/52100.webp', description: '项羽生命值低于50%时，获得额外的物理和法术防御。', cooldown: 0 },
       { id: 602, name: '无畏冲锋', icon: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/135/13510.png', description: '项羽向前冲锋，将路径上的敌人击退。', cooldown: 10 },
@@ -134,6 +182,14 @@ export const heroes: Hero[] = [
     avatar: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/141/141.jpg',
     role: 'mage',
     difficulty: 2,
+    stats: {
+      maxHp: 6050,
+      attack: 298,
+      defense: 95,
+      magic: 498,
+      moveSpeed: 380,
+      attackSpeed: 105
+    },
     skills: [
       { id: 701, name: '落红', icon: '/images/jn/52400.webp', description: '貂蝉的技能命中敌人后，会在敌人身上留下印记。', cooldown: 0 },
       { id: 702, name: '落雁', icon: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/141/14110.png', description: '貂蝉向指定方向释放花瓣。', cooldown: 4 },
@@ -155,6 +211,14 @@ export const heroes: Hero[] = [
     avatar: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/150/150.jpg',
     role: 'assassin',
     difficulty: 3,
+    stats: {
+      maxHp: 6120,
+      attack: 410,
+      defense: 98,
+      magic: 0,
+      moveSpeed: 430,
+      attackSpeed: 115
+    },
     skills: [
       { id: 801, name: '无双', icon: '/images/jn/52900.webp', description: '韩信的技能命中敌人后，会重置普攻。', cooldown: 0 },
       { id: 802, name: '无情冲锋', icon: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/150/15010.png', description: '韩信向指定方向冲锋。', cooldown: 8 },
@@ -176,6 +240,14 @@ export const heroes: Hero[] = [
     avatar: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/112/112.jpg',
     role: 'marksman',
     difficulty: 1,
+    stats: {
+      maxHp: 5720,
+      attack: 415,
+      defense: 85,
+      magic: 0,
+      moveSpeed: 350,
+      attackSpeed: 125
+    },
     skills: [
       { id: 901, name: '机关枪', icon: '/images/jn/64000.webp', description: '鲁班七号的普攻会连续射击。', cooldown: 0 },
       { id: 902, name: '河豚手雷', icon: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/112/11210.png', description: '鲁班七号投掷河豚手雷。', cooldown: 8 },
@@ -197,6 +269,14 @@ export const heroes: Hero[] = [
     avatar: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/111/111.jpg',
     role: 'marksman',
     difficulty: 2,
+    stats: {
+      maxHp: 6080,
+      attack: 408,
+      defense: 90,
+      magic: 0,
+      moveSpeed: 370,
+      attackSpeed: 118
+    },
     skills: [
       { id: 1001, name: '劲弩', icon: '/images/jn/13100.webp', description: '孙尚香的普攻会附带额外的物理伤害。', cooldown: 0 },
       { id: 1002, name: '翻滚突袭', icon: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/111/11110.png', description: '孙尚香向指定方向翻滚。', cooldown: 6 },
@@ -219,6 +299,14 @@ export const heroes: Hero[] = [
     avatar: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/190/190.jpg',
     role: 'mage',
     difficulty: 3,
+    stats: {
+      maxHp: 5980,
+      attack: 302,
+      defense: 92,
+      magic: 512,
+      moveSpeed: 370,
+      attackSpeed: 102
+    },
     skills: [
       { id: 1101, name: '策谋之刻', icon: '/images/jn/17900.webp', description: '诸葛亮的技能命中敌人后，会获得策谋之刻印记。', cooldown: 0 },
       { id: 1102, name: '东风破袭', icon: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/190/19010.png', description: '诸葛亮向指定方向释放法球。', cooldown: 3 },
@@ -239,6 +327,14 @@ export const heroes: Hero[] = [
     avatar: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/123/123.jpg',
     role: 'warrior',
     difficulty: 2,
+    stats: {
+      maxHp: 7680,
+      attack: 395,
+      defense: 168,
+      magic: 0,
+      moveSpeed: 395,
+      attackSpeed: 103
+    },
     skills: [
       { id: 1201, name: '饕餮血统', icon: '/images/jn/18400.webp', description: '吕布的普攻会附带真实伤害。', cooldown: 0 },
       { id: 1202, name: '方天画戟', icon: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/123/12310.png', description: '吕布向指定方向挥动方天画戟。', cooldown: 7 },
@@ -260,6 +356,14 @@ export const heroes: Hero[] = [
     avatar: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113.jpg',
     role: 'support',
     difficulty: 2,
+    stats: {
+      maxHp: 7250,
+      attack: 275,
+      defense: 145,
+      magic: 368,
+      moveSpeed: 385,
+      attackSpeed: 100
+    },
     skills: [
       { id: 1301, name: '自然意志', icon: '/images/jn/18700.webp', description: '庄周每隔一段时间会解除自身的控制效果。', cooldown: 0 },
       { id: 1302, name: '蝴蝶效应', icon: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/11310.png', description: '庄周释放蝴蝶。', cooldown: 5 },
@@ -280,6 +384,14 @@ export const heroes: Hero[] = [
     avatar: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/144/144.jpg',
     role: 'tank',
     difficulty: 1,
+    stats: {
+      maxHp: 8560,
+      attack: 342,
+      defense: 188,
+      magic: 0,
+      moveSpeed: 400,
+      attackSpeed: 96
+    },
     skills: [
       { id: 1401, name: '不死之身', icon: '/images/jn/52100.webp', description: '程咬金生命值低于30%时，每秒回复最大生命值的4%。', cooldown: 0 },
       { id: 1402, name: '一往无前', icon: 'https://game.gtimg.cn/images/yxzj/img201606/heroimg/144/14410.png', description: '程咬金向前冲锋。', cooldown: 8 },
