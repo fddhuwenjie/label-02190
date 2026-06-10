@@ -27,6 +27,7 @@ const createMockHero = (overrides: Partial<Hero> = {}): Hero => ({
   skills: [],
   skins: [],
   story: '亚瑟是一位勇敢的战士',
+  stats: { maxHp: 7000, attack: 380, defense: 350, magic: 0, moveSpeed: 370, attackSpeed: 105 },
   ...overrides
 })
 
@@ -469,7 +470,8 @@ const heroArbitrary: fc.Arbitrary<Hero> = fc.record({
   difficulty: difficultyArbitrary,
   skills: fc.constant([]),
   skins: fc.constant([]),
-  story: fc.constant('英雄故事')
+  story: fc.constant('英雄故事'),
+  stats: fc.constant({ maxHp: 7000, attack: 380, defense: 350, magic: 0, moveSpeed: 370, attackSpeed: 105 })
 })
 
 describe('HeroCard Property-Based Tests', () => {
